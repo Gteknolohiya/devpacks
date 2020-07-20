@@ -4,10 +4,9 @@
 
 #home-section {
     background: url('../img/landing.jpg');
-    min-height: 625px;
     background-size: cover;
     background-attachment: fixed;
-
+    height: 100vh;
 }
 
 .home-inner {
