@@ -1,0 +1,62 @@
+.navbar {
+    opacity: 0.8;
+}
+
+#home-section {
+    background: url('../img/landing.jpg');
+    min-height: 625px;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.home-inner {
+    width: 100%;
+}
+
+hr {
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+}
+
+#home-section .btn {
+    letter-spacing: 3px;
+    font-size: 1.2rem;    
+}
+
+#ui-section {
+    background: url('../img/ui-section.jpg');
+    background-size: cover;
+    min-height: 438px;
+}
+
+#font-section {
+    background: url('../img/font-section.jpg');
+    background-size: cover;
+    min-height: 438px;
+}
+
+#color-section {
+    background: url('../img/color-section.jpg');
+    background-size: cover;
+    min-height: 438px;
+}
+
+#icon-section {
+    background: url('../img/icon-section.jpg');
+    background-size: cover;
+    min-height: 438px;
+}
+
+#photo-section {
+    background: url('../img/photo-section.jpg');
+    background-size: cover;
+    min-height: 438px;
+}
+
+#other-section {
+    background: url('../img/other-section.jpg');
+    background-size: cover;
+    min-height: 438px;
+}
