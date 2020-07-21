@@ -1,5 +1,50 @@
+html, body {
+    scroll-behavior: smooth;
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+  } 
+
+/* GLOBAL */  
 .navbar {
     opacity: 0.8;
+}
+
+.text-primary {
+    color: #6ebfb5 !important;
+}
+
+.text-primary:hover {
+    color: #6ebfb5 !important;
+}
+
+.bg-dark {
+    background: transparent !important;
+}
+
+.bg-primary {
+    background: #27496d !important;
+    color: #dae1e7 !important;
+}
+
+.bg-dark.scrolled {
+    background: rgba(20, 40, 80, 1) !important;
+    box-shadow: 0 1px 3px #0a1429;
+    z-index: 100;
+}
+
+#navbar-hover:hover, #home-hover:hover, #about-hover:hover, #contact-hover:hover, #sections-hover:hover {
+    color: #6ebfb5;
+    transition: ease-in-out 300ms;
 }
 
 #home-section {
@@ -14,9 +59,19 @@
 }
 
 hr {
-    background-color: #fff;
+    background-color: #dae1e7;
     width: 100%;
     height: 2px;
+}
+
+.btn-outline-primary {
+    color: #dae1e7;
+    border: 2px solid #dae1e7;
+}
+
+.btn-outline-primary:hover {
+    background: rgba(110, 191, 181, 0.7);
+    border-color: #6ebfb5;
 }
 
 #home-section .btn {
@@ -24,38 +79,153 @@ hr {
     font-size: 1.2rem;    
 }
 
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    transition: ease-in-out 1s;
+}
+
+a:hover {
+    color: #6ebfb5 !important;
+}
+
+/* MAIN SECTION */
+.overlay {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.overlay:hover {
+    background: rgba(110, 191, 181, 0.9);
+    transition: all 500ms;
+}
+
+#main-section a {
+    text-decoration: none !important;
+    color: #dae1e7 !important;
+}
+
+#main-section h2 {
+    border-bottom: 5px solid #dae1e7;
+}
+
 #ui-section {
     background: url('../img/ui-section.jpg');
     background-size: cover;
     min-height: 438px;
+    padding: 0;
 }
 
 #font-section {
     background: url('../img/font-section.jpg');
     background-size: cover;
     min-height: 438px;
+    padding: 0;
 }
 
 #color-section {
     background: url('../img/color-section.jpg');
     background-size: cover;
     min-height: 438px;
+    padding: 0;
 }
 
 #icon-section {
     background: url('../img/icon-section.jpg');
     background-size: cover;
     min-height: 438px;
+    padding: 0;
 }
 
 #photo-section {
     background: url('../img/photo-section.jpg');
     background-size: cover;
     min-height: 438px;
+    padding: 0;
 }
 
 #other-section {
     background: url('../img/other-section.jpg');
     background-size: cover;
     min-height: 438px;
+    padding: 0;
+}
+
+/* ABOUT SECTION */
+
+#about-section {
+    background: url('../img/landing.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+/* CONTACT SECTION */
+#contact-section {
+    background: #142850;
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+    border-color: #6ebfb5 !important;
+    transition: 500ms;
+}
+
+#name, #email, #message {
+    background: #142850;
+    color: #dae1e7;
+    border: 2px solid #27496d;
+}
+
+#contact-information {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    border-left: 2px solid #27496d;
+    padding: 0;
+}
+
+#contact-information .email-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #27496d;
+    padding: 1rem;
+}
+
+#contact-information .phone-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #27496d;
+    border-bottom: 1px solid #27496d;
+    padding: 1rem;
+}
+
+#contact-information .address-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #27496d;
+    padding: 1rem;
+}
+
+/* FOOTER */
+#main-footer {
+    background: url('../img/landing.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    #contact-information {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0;
+        border: none;
+    }
+
+    #contact-information .email-card {
+        border-top: 2px solid #27496d;
+    }
 }

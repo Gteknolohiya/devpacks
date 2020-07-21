@@ -1,0 +1,138 @@
+/* TABLE HEADER */
+#ui-table-header {
+    display: flex;
+    align-items: center;
+    background: url('../img/ui-table.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+#font-table-header {
+    display: flex;
+    align-items: center;
+    background: url('../img/font-table.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+#color-table-header {
+    display: flex;
+    align-items: center;
+    background: url('../img/color-table.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+#icon-table-header {
+    display: flex;
+    align-items: center;
+    background: url('../img/icon-table.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+#photo-table-header {
+    display: flex;
+    align-items: center;
+    background: url('../img/photo-table.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+#other-table-header {
+    display: flex;
+    align-items: center;
+    background: url('../img/other-table.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+#ui-table-header h2, #font-table-header h2, #color-table-header h2,
+#icon-table-header h2, #photo-table-header h2, #other-table-header h2 {
+    width: max-content;
+    border-bottom: 5px solid #dae1e7;
+}
+
+#table-section {
+    background: url('../img/landing.jpg');
+    background-attachment: fixed;
+}
+
+.table {
+    width: 100%;
+}
+
+.other, .table-inner {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.other .other-title, .table-inner .table-title {
+    font-size: 1rem;
+}
+
+.other .other-description p, .table-inner .table-description p {
+    color: #DAE1E7 !important;
+    text-align: left;
+}
+
+.table table {
+    background-color: rgba(39, 73, 109, 0.5);
+    margin: auto;
+    border-top: 1px solid #dae1e7;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.table td a {
+    color: #82d2e3;
+    text-decoration: none !important;
+}
+
+.table td a:hover {
+    color: #6ebfb5;
+    text-decoration: underline !important;
+    transition: ease-in-out 200ms;
+}
+
+.table th {
+    text-align: center;
+}
+
+.table th, td {
+    padding: 1rem;
+}
+
+.table table, th, td {
+    border: 1px solid #b2c0cd !important;
+    border-collapse: collapse;
+  }
+
+.table p, .table p a {
+    color: #27496D !important;
+    text-align: center;
+}
+
+.table .back-top {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    width: 80%;
+}
+
+.table .back-top a {
+    color: #DAE1E7;
+    text-decoration: none;
+}
+
+.table .back-top a:hover {
+    color: #40bad5;
+}
+
+.table .back-top a .fas{
+    margin-right: 0.5rem;
+}
