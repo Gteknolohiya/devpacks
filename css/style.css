@@ -88,10 +88,15 @@ a:hover {
     color: #6ebfb5 !important;
 }
 
+#brand-image {
+    height: 40px;
+}
+
 /* MAIN SECTION */
 .overlay {
     display: flex;
     align-items: center;
+    border: 2px solid #142850;
     padding-left: 2rem;
     width: 100%;
     height: 100%;
