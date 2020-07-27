@@ -160,58 +160,7 @@ a:hover {
 /* ABOUT SECTION */
 
 #about-section {
-    background: url('../img/landing.jpg');
-    background-size: cover;
-    background-attachment: fixed; 
-}
-
-/* CONTACT SECTION */
-#contact-section {
     background: #142850;
-}
-
-input:focus, textarea:focus {
-    outline: none !important;
-    border-color: #6ebfb5 !important;
-    transition: 500ms;
-}
-
-#name, #email, #message {
-    background: #142850;
-    color: #dae1e7;
-    border: 2px solid #27496d;
-}
-
-#contact-information {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    border-left: 2px solid #27496d;
-    padding: 0;
-}
-
-#contact-information .email-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 1px solid #27496d;
-    padding: 1rem;
-}
-
-#contact-information .phone-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-top: 1px solid #27496d;
-    border-bottom: 1px solid #27496d;
-    padding: 1rem;
-}
-
-#contact-information .address-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-top: 1px solid #27496d;
-    padding: 1rem;
 }
 
 /* FOOTER */
@@ -233,4 +182,5 @@ input:focus, textarea:focus {
     #contact-information .email-card {
         border-top: 2px solid #27496d;
     }
+    
 }
